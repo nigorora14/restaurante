@@ -8,5 +8,3 @@ export default function TopRestaurante() {
         </View>
     )
 }
-
-const styles = StyleSheet.create({})
