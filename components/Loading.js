@@ -7,7 +7,7 @@ export default function Loading({isVisible, text}) {//va usar dos propiedades is
     return (
         
         <Overlay isVisible={isVisible}
-                 windowBackgoundColor="rgba(0,0,0,0.5)"
+                 windowBackgoundColor='rgba(0,0,0,0.5)'
                  overlayBackgroundColor="transparent"
                  overlayStyle={styles.Overlay}
         >
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     Overlay: {
         height: 100,
         width:200,
-        backgroundColor:"fff",
+        backgroundColor:"#fff",
         borderColor: "#442484",
         borderWidth:2,
         borderRadius: 10
