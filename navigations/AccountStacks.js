@@ -1,12 +1,12 @@
 //rnf
 import React from 'react'
 import {createStackNavigator} from '@react-navigation/stack'
-import Account from '../screens/Account'
+import Account from '../screens/account/Account'
 
 //creando el stack de navegacion - lo que se ve en la parte de arriba del menu
 const Stack = createStackNavigator()
 
-export default function AccountStacks() {
+export default function aAccountStacks() {
     return (
         <Stack.Navigator>
             <Stack.Screen
