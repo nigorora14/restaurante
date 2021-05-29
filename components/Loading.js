@@ -6,7 +6,7 @@ import { Overlay } from 'react-native-elements/dist/overlay/Overlay' //
 export default function Loading({isVisible, text}) {//va usar dos propiedades isVisible: activar y desactivar y text que va mostrar el login 
     return (
         
-        <Overlay isVisible={isVisible}
+        <Overlay isVisible = {isVisible}
                  windowBackgoundColor="rgba(0,0,0,0.5)"
                  overlayBackgroundColor="transparent"
                  overlayStyle={styles.Overlay}

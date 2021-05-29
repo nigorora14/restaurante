@@ -18,15 +18,16 @@ export default function Account() {
     //indica que si esta logeado el usuario o no
     useEffect(() => {
         const user = getCurrentUser()
-        user ? setLogin(true):setLogin(false)
+        user ? setLogin(true) : setLogin(false)
     }, [])
 
     //si el login es nulo
-    //if (login==null) {
+    if (login == null) {
+
         return <Loading isVisible={true} text = "Cargando..."/>
-    //}
-    //si llega a este punto es por que termino la consulta del login
-    return login ? <UserLogged/> : <UserGuest/>
+    }
+     //si llega a este punto es por que termino la consulta del login
+     return login ? <UserLogged/> : <UserGuest/>
 }
 
 const styles = StyleSheet.create({})

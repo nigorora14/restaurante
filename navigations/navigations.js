@@ -66,11 +66,6 @@ export default function navigations() {
                      options={{title:"Restaurante"}}//para que muestre en la App 
                 />
                 <Tab.Screen
-                     name="_account"//nombre interno
-                     component={AccountStacks}//que objeto va renderizar 
-                     options={{title:"Cuenta"}}//para que muestre en la App 
-                />
-                <Tab.Screen
                      name="_topRestaurante"//nombre interno
                      component={TopRestauranteStacks}//que objeto va renderizar 
                      options={{title:"Top 10"}}//para que muestre en la App 
@@ -84,6 +79,11 @@ export default function navigations() {
                      name="_search"//nombre interno
                      component={SearchStacks}//que objeto va renderizar 
                      options={{title:"Buscar"}}//para que muestre en la App 
+                />
+                <Tab.Screen
+                     name="_account"//nombre interno
+                     component={AccountStacks}//que objeto va renderizar 
+                     options={{title:"Cuenta"}}//para que muestre en la App 
                 />
             </Tab.Navigator>
         </NavigationContainer>
