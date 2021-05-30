@@ -12,6 +12,7 @@ export const isUserLogged = () => {
     {
         user !== null && (isLogged=true) //indica que si esta logeado el usuario
     })
+    return isLogged
 }
 
 export const getCurrentUser = () => 
