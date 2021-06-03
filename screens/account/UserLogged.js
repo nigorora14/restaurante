@@ -6,6 +6,7 @@ import { useNavigation } from '@react-navigation/native'
 import Toast from 'react-native-easy-toast'
 import Loading from '../../components/Loading'
 import InfoUser from '../../components/account/InfoUser'
+import AccountOptions from '../../components/account/AccountOptions'
 
 export default function UserLogged() {
     const toastRef = useRef()
@@ -29,7 +30,10 @@ export default function UserLogged() {
                     setLoading={setLoading} 
                     setLoadingText={setLoadingText}
                 />
-                <Text>Account Options</Text>
+                <AccountOptions
+                    user={user}
+                    toastRef={toastRef}
+                />
                 </View>
             )
             }
@@ -62,12 +66,12 @@ const styles = StyleSheet.create({
         backgroundColor:"#f9f9f9"
     },
     btnCloseSession: {
-        marginTop: 30,
+        marginTop: "20%",
         borderRadius: 5,
         backgroundColor: "#FFFFFF",
         borderTopWidth:1,
         borderBottomWidth: 1,
-        borderBottomColor:"#882484",
+        //borderBottomColor:"#442484",
         paddingVertical:10
     },
     btnCloseSessionTitle: {

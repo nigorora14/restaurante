@@ -22,7 +22,7 @@ export default function Login() {
     )
 }
 
-function CreateAccount(params) {
+function CreateAccount() {
     const navigation = useNavigation()
     return (
         <Text 

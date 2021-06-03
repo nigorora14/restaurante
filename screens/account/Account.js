@@ -11,8 +11,6 @@ import   firebase from 'firebase';
 import UserGuest from './UserGuest';
 import UserLogged from './UserLogged';
 
-
-
 export default function Account() {
     //creando un estado donde el usuario no esta logeado  
     const [login,setLogin] = useState(null) 

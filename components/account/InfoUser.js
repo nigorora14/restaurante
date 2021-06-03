@@ -59,10 +59,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "row",
-        backgroundColor: "#c7b1db",
-        paddingVertical:5
+        backgroundColor: "#f9f9f9",
+        paddingVertical:20
     }, displayname: {
         fontWeight: "bold",
-        paddingBottom: 5 
+        paddingBottom: 5
     }
 })
