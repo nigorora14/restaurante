@@ -53,11 +53,12 @@ export default function navigations() {
             <Tab.Navigator
                initialRouteName="_topRestaurante"//donde va iniciar la app
                tabBarOptions={{//los colores que tendra cuando esta activo y desactivo
-                    inactiveTintColor:"#a17dc3",
-                    activeTintColor:"#442484"
+                              inactiveTintColor:"#a17dc3",
+                              activeTintColor:"#442484"
                }}//definir el color
+               
                screenOptions={({route})=>({
-                    tabBarIcon: ({color})=>screenOptions(route,color)
+                              tabBarIcon: ({color})=>screenOptions(route,color)
                })}
             >
                 <Tab.Screen
@@ -66,14 +67,14 @@ export default function navigations() {
                      options={{title:"Restaurante"}}//para que muestre en la App 
                 />
                 <Tab.Screen
-                     name="_topRestaurante"//nombre interno
-                     component={TopRestauranteStacks}//que objeto va renderizar 
-                     options={{title:"Top 10"}}//para que muestre en la App 
-                />
-                <Tab.Screen
                      name="_favorites"//nombre interno
                      component={FavoritesStacks}//que objeto va renderizar 
                      options={{title:"Favoritos"}}//para que muestre en la App 
+                />
+                <Tab.Screen
+                     name="_topRestaurante"//nombre interno
+                     component={TopRestauranteStacks}//que objeto va renderizar 
+                     options={{title:"Top 5"}}//para que muestre en la App 
                 />
                 <Tab.Screen
                      name="_search"//nombre interno

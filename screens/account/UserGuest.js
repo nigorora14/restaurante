@@ -40,7 +40,8 @@ const styles = StyleSheet.create({
         height: 300,
         width: "100%",
         marginBottom: 10,
-        alignItems: "center"
+        alignItems: "center",
+        marginVertical: "15%"
     },
     title: {
         fontWeight: "bold",
@@ -49,11 +50,11 @@ const styles = StyleSheet.create({
         textAlign: "center"
     },
     description:{
-        textAlign : "justify",//justify comienza desde la izquierda ajustando los caracteres
+        textAlign : "justify",//justify: comienza desde la izquierda ajustando los caracteres
         marginBottom : 10,
         color : "#a65273"    
     },
     button:{
-        backgroundColor : "#735b9b"
+        backgroundColor : "#442484"
     }
 })
