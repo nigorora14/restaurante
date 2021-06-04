@@ -32,7 +32,7 @@ export default function InfoUser({user,setLoading, setLoadingText}) {
     return (
         <ListItem style={styles.container}>
             <Avatar
-                rounded 
+                rounded = {true}
                 activeOpacity={0.7}
                 size= "large"
                 alignSelf= "center"

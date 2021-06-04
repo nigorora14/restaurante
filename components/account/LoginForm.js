@@ -38,14 +38,16 @@ export default function LoginForm() {
             //validacion correcta
             setLoading(true)
             const result = await loginWithEmailAndPassword(formData.email, formData.password)
-            setLoading(false)
+            
 
             if (!result.statusResponse) {
                 setErrorEmail(result.error)
                 setErrorPassword(result.password)
+                setLoading(false)
                 return
             }else{
                 navigation.navigate("_account")
+                setLoading(false)
             }
         }
     }
