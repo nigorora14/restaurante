@@ -45,7 +45,7 @@ export default function ChangeDisplayNameForm({ displayName, setShowModal, toast
     return (
         <View style={styles.view}>
             <Input
-                placeholder="Ingresa nombres y apellidos"
+                placeholder="Ingresa Nombres..."
                 containerStyle={styles.input}
                 defaultValue={displayName}
                 onChange={(e)=> setNewDisplayName(e.nativeEvent.text)}
@@ -57,7 +57,7 @@ export default function ChangeDisplayNameForm({ displayName, setShowModal, toast
                 }}
             />
             <Button
-                title="Cambiar Nombres y Apellidos"
+                title="Actualizar Nombres"
                 containerStyle={styles.btnContainer}
                 buttonStyle ={styles.btn}
                 onPress={onSubmit}
